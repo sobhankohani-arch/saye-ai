@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: saye-ai
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4.1-mini
+      - key: OPENAI_IMAGE_MODEL
+        value: gpt-image-1
+      - key: MAX_UPLOAD_MB
+        value: "20"
