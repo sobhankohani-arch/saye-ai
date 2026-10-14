@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+python-multipart
+openai
+httpx
+jinja2
+pillow
